@@ -1,0 +1,5 @@
+#!/bin/bash
+
+COM=$(free -h | grep 'Mem:' | awk '{print $4}')
+
+echo "RAM:$COM"

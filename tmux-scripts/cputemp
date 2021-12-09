@@ -1,0 +1,5 @@
+#!/bin/bash
+
+COM=$(sensors | grep 'Core ' | awk '{print $3}' | tr '\n' ' ')
+
+echo "CPU:$COM"
